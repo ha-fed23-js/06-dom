@@ -1,0 +1,12 @@
+.havet {
+	background-color: rgb(231, 126, 74);
+}
+
+.ghost {
+	background: rgb(227, 224, 224);
+	padding: 1em;
+}
+.invisible {
+	/* display none, z-index, visibility, opacity */
+	visibility: hidden;
+}
