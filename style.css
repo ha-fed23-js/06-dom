@@ -13,3 +13,9 @@
 #click-info span {
 	font-size: 200%;
 }
+
+
+#on-off-button {
+	padding: 0.4em 1.2em;
+	border-radius: 0.4em;
+}

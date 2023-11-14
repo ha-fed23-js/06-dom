@@ -20,6 +20,8 @@ const ghostButton = document.querySelector('#ghost-button')
 const ghostP = document.querySelector('.ghost')
 ghostButton.addEventListener('click', () => {
 	ghostP.classList.toggle('invisible')
+	// let v = getComputedStyle(ghostP).visibility
+	// console.log('Ghost visibility: ', v);
 })
 
 
@@ -35,4 +37,36 @@ countButton.addEventListener('click', () => {
 	// textContent ersätter allt innehåll, bryr sig inte om HTML
 	// innerText gör samma sak
 	// innerHTML respekterar HTML i strängen
+})
+
+
+const onOffButton = document.querySelector('#on-off-button')
+
+let isOn = true
+onOffButton.addEventListener('click', () => {
+	console.log('on off button');
+	if ( isOn ) {
+		onOffButton.innerText = 'Off'
+		isOn = false
+	} else {
+		onOffButton.innerText = 'On'
+		isOn = true
+	}
+})
+
+
+const createSection = document.querySelector('#create-section')
+const createButton = document.querySelector('#create-button')
+
+let createCount = 0
+createButton.addEventListener('click', () => {
+	// skapa element
+	// textinnehåll
+	// lägg till nya elementet i section
+	if( createCount < 2 ) {
+		const p = document.createElement('p')
+		p.innerText = 'Wow!!'
+		createSection.append(p)
+		createCount++
+	}
 })
