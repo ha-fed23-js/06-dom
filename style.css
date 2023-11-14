@@ -10,3 +10,6 @@
 	/* display none, z-index, visibility, opacity */
 	visibility: hidden;
 }
+#click-info span {
+	font-size: 200%;
+}
